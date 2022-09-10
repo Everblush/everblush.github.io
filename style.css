@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+ :root {
+    --bg: #141b1e;
+    --bg-dark: #0f1619;
+    --fg: #dadada;
+    --red: #e57474;
+    --green: #8ccf7e;
+    --yellow: #e5c76b;
+    --blue: #67b0e8;
+    --magenta: #c47fd5;
+    --cyan: #6cbfbf;
+    --pink: #ee9cdd;
+    --teal: #7bc6dd;
+    --lavender: #bab3e5;
+}
+
+html {
+    background-color: var(--bg-dark) !important;
+    color: var(--fg) !important;
+}
+
+body {
+    background-color: var(--bg-dark);
+}
+
+#home {
+    background-color: var(--bg-dark);
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.main {
+    font-family: "DM Sans", sans-serif;
+    color: var(--fg);
+    font-size: 36px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.main p {
+    width: 350px;
+}
+
+.main .links {
+    color: var(--fg);
+    margin-top: 0px;
+    /* background-color: var(--blue); */
+}
+
+.links a {
+    color: var(--fg);
+    text-decoration: none;
+    border: 2px solid var(--lavender);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 8px;
+}
+
+.links a:hover {
+    transition: 0.5s;
+    background-color: var(--lavender);
+    color: var(--bg);
+}
+
+.nvim-preview {
+    object-fit: fill;
+    /* margin-top: 8% !important; */
+    /* padding-left: 30%; */
+    /* margin-right: -30% !important; */
+}
+
+@media (max-width: 500px) {
+    #nvim-preview img {
+        padding-top: 425px;
+        margin-right: 30% !important;
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    #nvim-preview img {
+        padding-top: 425px;
+        margin-right: 30% !important;
+        margin-top: 0 !important;
+    }
+}
